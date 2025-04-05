@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title> Khám Phá Du Lịch Việt Nam </title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #9ad5d5b3;
+      color: #333;
+    }
+
+    header {
+      background:url('https://vietsensetravel.com/view/at_tour-du-lich-mien-bac-4-ngay-3-dem_3bd97a6199a93d812f43108c24432dc2.jpg')no-repeat center center/cover;
+      height: 60vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 3px 2px 4px #000;
+    }
+
+    header h1 {
+      font-size: 3em;
+      text-align: center;
+    }
+
+   
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: #0288D1;
+      margin-bottom: 15px;
+    }
+
+    .destinations {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      width: calc(33.333% - 20px);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    footer {
+      background: #0288D1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+      background-color: #4bc785;
+      
+    }
+    table, th, td {
+      border: 1px solid #cccccc;
+    }
+    th, td {
+      padding: 20px;
+      text-align: left;
+    }
+    ul {
+      margin-top: 10px;
+      color:rgb(42, 32, 32);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Khám Phá Du Lịch Việt Nam </h1>
+</header>
+
+
+<div class="container">
+  <div class="section">
+    <h2>Điểm đến nổi bật</h2>
+    <div class="destinations">
+      <div class="card">
+        <img src="https://cafefcdn.com/203337114487263232/2024/4/5/photo-6-1712224476290181986244-1712285684861-17122856851252026073236.jpg" alt="Vịnh Hạ Long">
+        <div class="card-content">
+        <h3>Vịnh Hạ Long </h3>
+          <a href="https://special.nhandan.vn/vinhhalongchuoingocgiuabien/index.html">Cảnh sắc thiên nhiên kỳ vĩ, được UNESCO công nhận là Di sản Thế giới.</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cafefcdn.com/203337114487263232/2024/4/5/photo-5-1712224473835687607115-1712285685984-17122856862051247683264.jpg" alt="Sa Pa">
+        <div class="card-content">
+          <h3>Sa Pa</h3>
+          <a href="https://vietnam.travel/places-to-go/northern-vietnam/sapa">Vùng núi Tây Bắc với bản làng và ruộng bậc thang tuyệt đẹp.</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cafefcdn.com/203337114487263232/2024/4/5/photo-2-17122244674331274689744-1712285689213-17122856893401599259619.jpg" alt="Hội An">
+        <div class="card-content">
+          <h3>Phố cổ Hội An</h3>
+          <a href="https://mia.vn/cam-nang-du-lich/pho-co-hoi-an-di-san-kien-truc-an-tuong-cua-the-gioi-166">Di sản văn hóa thế giới với kiến trúc cổ kính và lung linh đèn lồng. </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<video  width="100%" controls>
+  <video src="https://www.youtube.com/watch?v=04Kf_0kppPM" title="Du lịch Việt Nam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls>
+</video>
+
+  <h2>  Danh sách các hoạt động phổ biến</h2>
+  <ul><b>
+    <li>1.Tham quan di tích lịch sử</li>
+    <li>2.Khám phá ẩm thực địa phương</li>
+    <li>3.Leo núi và trekking</li>
+    <li>4.Chèo thuyền kayak</li>
+    <li>5.Chụp ảnh phong cảnh</li>
+  </ul></b>
+
+  <h2>  Bảng số liệu: Top điểm đến được yêu thích</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Điểm đến</th>
+        <th>Tỉnh/Thành phố</th>
+        <th>Lượng du khách (triệu người)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Vịnh Hạ Long</td>
+        <td>Quảng Ninh</td>
+        <td>11.5</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Phố cổ Hội An</td>
+        <td>Quảng Nam</td>
+        <td>5.0</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Sa Pa</td>
+        <td>Lào Cai</td>
+        <td>3.2</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<footer>
+  &copy; 2025 TravelViet. Thiết kế bởi Thảo Quyên!
+</footer>
+
+</body>
+</html>
