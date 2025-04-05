@@ -112,6 +112,14 @@
       margin-top: 10px;
       color:rgb(42, 32, 32);
     }
+    canvas {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
   </style>
 </head>
 <body>
@@ -167,6 +175,93 @@
     <li>4.Chèo thuyền kayak</li>
     <li>5.Chụp ảnh phong cảnh</li>
   </ul>
+  <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Biểu đồ Du Lịch Việt Nam</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f2f9ff;
+            text-align: center;
+        }
+
+        canvas {
+            max-width: 1800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #006699;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Biểu Đồ Thống Kê Du Lịch Việt Nam (2020 - 2023)</h1>
+
+    <canvas id="tourismChart"></canvas>
+
+    <script>
+        const ctx = document.getElementById('tourismChart').getContext('2d');
+
+        const tourismChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['2020', '2021', '2022', '2023'],
+                datasets: [
+                    {
+                        label: 'Khách nội địa (triệu)',
+                        data: [56, 40, 101, 108],
+                        backgroundColor: '#66ccff'
+                    },
+                    {
+                        label: 'Khách quốc tế (triệu)',
+                        data: [3.8, 0.2, 3.5, 12.6],
+                        backgroundColor: '#ff9966'
+                    },
+                    {
+                        label: 'Tổng thu (tỷ VND)',
+                        data: [312000, 180000, 495000, 678000],
+                        backgroundColor: '#99cc33',
+                        yAxisID: 'y2' // dùng trục thứ hai vì giá trị lớn hơn
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Số khách (triệu)'
+                        }
+                    },
+                    y2: {
+                        beginAtZero: true,
+                        position: 'right',
+                        title: {
+                            display: true,
+                            text: 'Tổng thu (tỷ VND)'
+                        },
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
 
   <h2>  Bảng số liệu: Top điểm đến được yêu thích</h2>
   <table>
